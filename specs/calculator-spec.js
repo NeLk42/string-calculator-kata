@@ -1,9 +1,10 @@
 var calculator = require('../calculator')
 
 describe('As a math student', function() {
-	describe('when I use the calculator', function() {
-		it('contains spec with an expectation', function() {
-			expect(true).toBe(true);
+	describe('when I use the string calculator', function() {
+		it('should return 0 for an empty string', function() {
+			var result = calculator.add('')
+			expect(result).toBe(0);
 		});
 	});
 });
