@@ -25,5 +25,10 @@ describe('As a math student', function() {
 			var result = calculator.add('42,21')
 			expect(result).toBe(63)
 		})
+
+		it('should return sum(a,b,c,...) of any amount of numbers given', function() {
+			var result = calculator.add('21,42,63,84')
+			expect(result).toBe(210)
+		})
 	});
 });
