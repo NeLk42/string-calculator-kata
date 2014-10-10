@@ -5,7 +5,8 @@ exports.add = function(text){
 };
 
 getNums = function(text){
-	return text.split(',')	
+	var delimiter = /,|\n/g
+	return text.split(delimiter)	
 }
 
 getSum = function(numbers){

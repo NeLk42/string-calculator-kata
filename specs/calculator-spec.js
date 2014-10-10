@@ -30,5 +30,11 @@ describe('As a math student', function() {
 			var result = calculator.add('21,42,63,84')
 			expect(result).toBe(210)
 		})
+
+		it('should also support \n as a delimiter e.g: 1,2\n3', function (){
+			var result = calculator.add('21\n42,63')
+			expect(result).toBe(126)
+
+		})
 	});
 });
