@@ -2,10 +2,20 @@ var calculator = require('../calculator')
 
 describe('As a math student', function() {
 	describe('when I use the string calculator', function() {
+
+		beforeEach(function(){
+
+		})
+
 		it('should return 0 for an empty string', function() {
 			var result = calculator.add('')
 			expect(result).toBe(0);
 		});
+
+		it('should return n for a given n number', function() {
+			var result = calculator.add('1')
+			expect(result).toBe(1)
+		})
 	});
 });
 

@@ -1,4 +1,3 @@
-exports.add = function(operator1, operator2){
-	return 0;
-
+exports.add = function(expression){
+	return parseInt(expression || 0)
 };
