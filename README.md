@@ -1,2 +1,1 @@
-14.10.9.-StringCalculator-Kata
-==============================
+String Calculator Kata
